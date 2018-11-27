@@ -6,4 +6,23 @@
 <h2>@ViewData["Title"]</h2>
 <h3>@Model.Message</h3>
 
-<p>Use this area to provide additional information.</p>
+<p>
+    <h4>Main features:</h4>
+    Within a group, a user can create a work object. Within that work object, allow for text to describe that object's features/progress/bugs/notes/whatever<br />
+    Only one user at a time can edit a work object, it is “locked”<br />
+    Multiple objects should be visible on a page at a time. Two simultaneous edits should broadcast to all watching the page<br />
+    Multiple groups allowed<br />
+</p>
+
+<p>
+    <h4>Keep it simple:</h4>
+    No logins<br />
+    No tracking history<br />
+</p>
+
+<p>
+    <h4>Technical requirements:</h4>
+    Java or .NET allowed, your pick<br />
+    Must use a database to store the data, so that if the server reboots, the group info is preserved.<Br />    
+    Multiple users need to be allowed simultaneously. I'm specifically grading by watching for more than 2 at a time.<br />
+</p>
