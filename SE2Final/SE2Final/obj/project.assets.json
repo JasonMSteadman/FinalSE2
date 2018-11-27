@@ -11506,11 +11506,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\jason\\Documents\\Visual Studio 2017\\Projects\\SE2Final\\SE2Final\\SE2Final.csproj",
+      "projectUniqueName": "D:\\CS\\SE2\\Final\\FinalSE2\\SE2Final\\SE2Final\\SE2Final.csproj",
       "projectName": "SE2Final",
-      "projectPath": "C:\\Users\\jason\\Documents\\Visual Studio 2017\\Projects\\SE2Final\\SE2Final\\SE2Final.csproj",
+      "projectPath": "D:\\CS\\SE2\\Final\\FinalSE2\\SE2Final\\SE2Final\\SE2Final.csproj",
       "packagesPath": "C:\\Users\\jason\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\jason\\Documents\\Visual Studio 2017\\Projects\\SE2Final\\SE2Final\\obj\\",
+      "outputPath": "D:\\CS\\SE2\\Final\\FinalSE2\\SE2Final\\SE2Final\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
