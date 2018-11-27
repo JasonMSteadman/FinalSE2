@@ -32,6 +32,8 @@ namespace SE2Final
 
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+
+            services.AddSignalR();  /// Added////////////
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -48,6 +50,13 @@ namespace SE2Final
 
             app.UseStaticFiles();
             app.UseCookiePolicy();
+
+            ////////////////////
+            app.UseSignalR(routes =>
+            {
+                routes.MapHub<Server>("/server");
+            });
+            ////////////////////////
 
             app.UseMvc();
         }
