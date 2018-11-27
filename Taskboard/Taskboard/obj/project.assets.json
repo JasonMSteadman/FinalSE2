@@ -11506,11 +11506,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\WSU\\Fall_2018\\CS 3750\\FinalSE2\\SE2Final\\SE2Final\\SE2Final.csproj",
-      "projectName": "SE2Final",
-      "projectPath": "C:\\WSU\\Fall_2018\\CS 3750\\FinalSE2\\SE2Final\\SE2Final\\SE2Final.csproj",
+      "projectUniqueName": "C:\\WSU\\Fall_2018\\CS 3750\\FinalSE2\\Taskboard\\Taskboard\\Taskboard.csproj",
+      "projectName": "Taskboard",
+      "projectPath": "C:\\WSU\\Fall_2018\\CS 3750\\FinalSE2\\Taskboard\\Taskboard\\Taskboard.csproj",
       "packagesPath": "C:\\Users\\Taylen\\.nuget\\packages\\",
-      "outputPath": "C:\\WSU\\Fall_2018\\CS 3750\\FinalSE2\\SE2Final\\SE2Final\\obj\\",
+      "outputPath": "C:\\WSU\\Fall_2018\\CS 3750\\FinalSE2\\Taskboard\\Taskboard\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
