@@ -27,3 +27,12 @@ git pull
 git pop
 --Merges your stashed file with your current file stashed
 
+git checkout (branchName)
+--Switches to a new branch
+
+git branch
+--Tells you your current branch
+
+git branch -a
+--Shows all branches
+
