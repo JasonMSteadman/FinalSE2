@@ -11500,23 +11500,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\jason\\.nuget\\packages\\": {},
+    "C:\\Users\\Taylen\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\CS\\SE2\\Final\\FinalSE2\\SE2Final\\SE2Final\\SE2Final.csproj",
+      "projectUniqueName": "C:\\WSU\\Fall_2018\\CS 3750\\FinalSE2\\SE2Final\\SE2Final\\SE2Final.csproj",
       "projectName": "SE2Final",
-      "projectPath": "D:\\CS\\SE2\\Final\\FinalSE2\\SE2Final\\SE2Final\\SE2Final.csproj",
-      "packagesPath": "C:\\Users\\jason\\.nuget\\packages\\",
-      "outputPath": "D:\\CS\\SE2\\Final\\FinalSE2\\SE2Final\\SE2Final\\obj\\",
+      "projectPath": "C:\\WSU\\Fall_2018\\CS 3750\\FinalSE2\\SE2Final\\SE2Final\\SE2Final.csproj",
+      "packagesPath": "C:\\Users\\Taylen\\.nuget\\packages\\",
+      "outputPath": "C:\\WSU\\Fall_2018\\CS 3750\\FinalSE2\\SE2Final\\SE2Final\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\jason\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Taylen\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -11559,13 +11559,5 @@
         "warn": true
       }
     }
-  },
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problem reading the cache file D:\\CS\\SE2\\Final\\FinalSE2\\SE2Final\\SE2Final\\obj\\SE2Final.csproj.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
-    }
-  ]
+  }
 }

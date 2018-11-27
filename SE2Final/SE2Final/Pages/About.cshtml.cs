@@ -12,7 +12,7 @@ namespace SE2Final.Pages
 
         public void OnGet()
         {
-            Message = "Your application description page.";
+            Message = "Final Project - Visual Taskboard";
         }
     }
 }
