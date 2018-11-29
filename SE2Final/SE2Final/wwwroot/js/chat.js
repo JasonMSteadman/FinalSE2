@@ -22,3 +22,25 @@ document.getElementById("sendButton").addEventListener("click", function (event)
     });
     event.preventDefault();
 });
+
+//  Obtains the edit lock for a specific document
+document.getElementsByClassName("edit").addEventListener("click", function (event) {
+    var textID = "confirmSubmit(this);"
+    connection.invoke("lock", textID).catch(function (err) {
+        return console.error(err.toString());
+    });
+    event.preventDefault();
+});
+
+//  While editing a file
+document.getElementsByClassName("file").addEventListener("keypress", function (event) {
+    var textID = "confirmSubmit(this);"
+    
+    connection.invoke("lock", textID).catch(function (err) {
+        return console.error(err.toString());
+    });
+    event.preventDefault();
+});
+
+//  Send char
+//  Edit/unlock
