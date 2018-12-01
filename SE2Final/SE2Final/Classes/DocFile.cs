@@ -7,17 +7,19 @@ namespace SE2Final.Classes
 {
     public class DocFile
     {
-        private int iLock { get; set; }
-        private string sTitle { get; set; }
-        private string sBody { get; set; }
-        private string sGroupName { get; set; }
-        private int iID { get; set; }
+        public int iLock { get; set; }
+        public string sTitle { get; set; }
+        public string sBody { get; set; }
+        public string sGroupName { get; set; }
+        public int iID { get; set; }
 
-        public DocFile()
+        public DocFile(int iID)
         {
             iLock = 0;
             sTitle = "";
             sBody = "";
+            this.iID = iID;
+            sGroupName = "";
         }
 
     }
