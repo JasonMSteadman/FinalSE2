@@ -9,6 +9,7 @@ namespace SE2Final.Pages
 {
     public class IndexModel : PageModel
     {
+
         public void OnGet()
         {
 

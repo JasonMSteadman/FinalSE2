@@ -1,26 +1,41 @@
 ﻿@page
 <div class="container">
-    <div class="row">&nbsp;</div>
-    <div class="row">
-        <div class="col-6">&nbsp;</div>
-        <div class="col-6">
-            User..........<input type="text" id="userInput" />
-            <br />
-            Message...<input type="text" id="messageInput" />
-            <input type="button" id="sendButton" value="Send Message" />
-        </div>
+    
+    <div id="menu">
+        <br />
+        <select id="groupbox" onchange="groupBoxClose()">
+            <option selected="selected" id="dbox"> -- Select a Group -- </option>
+        </select>
+        <input type="button" onclick="newGroup()" value="New Group" />
+        <input type="button" onclick="deleteGroup()" id="deletebtn" value="Delete Group" />
+        <br />
+        <input type="button" onclick="newDoc()" id="newDoc" value="New Document" />
+        <br />
     </div>
-    <div class="row">
-        <div class="col-12">
-            <hr />
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-6">&nbsp;</div>
-        <div class="col-6">
-            <ul id="messagesList"></ul>
-        </div>
-    </div>
+    <div id="pagebody" class="flex-containers" onload="loading()"></div>
+    <style>        
+        html, body {
+            max-width: 100%;
+            overflow-x: auto;
+            background-color: aqua;
+        }
+
+        .flex-containers {
+            display: flex;
+            flex-wrap: wrap;
+            flex-basis: 40%;
+        }
+
+        .doc {
+            background-color: black;
+            padding: 0;
+            margin-left: 1.5%;
+            margin-right: 1.5%;
+            margin-top: 5%;
+            margin-bottom: 5%;
+            width: 30%;
+        }
+    </style>
 </div>
 <script src="~/lib/signalr/dist/browser/signalr.js"></script>
 <script src="~/js/chat.js"></script>
