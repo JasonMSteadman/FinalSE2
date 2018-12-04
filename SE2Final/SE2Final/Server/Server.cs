@@ -57,7 +57,7 @@ namespace SE2Final
             string sBody;
             int iLock;
             int iID;
-
+            //  TODO Build build que to populate    ////////////////////////////////////
             foreach(KeyValuePair<int, DocFile> c in group[groupName])
             {
                 iID = c.Value.iID;
@@ -74,8 +74,11 @@ namespace SE2Final
         /// <returns></returns>
         public async Task LoadGroupBox()
         {
+            //  Que DB for all group names
+            //  iterate through the groups sending the names one at a time 
             foreach (KeyValuePair<string, Dictionary<int, DocFile>> c in group)
             {
+                                               // Function, Name, is focused 
                 await Clients.Caller.SendAsync("PopGroup", c.Key, false);
             }
         }
@@ -92,7 +95,8 @@ namespace SE2Final
             if (group[groupName].ContainsKey(id))
             {
                 //  TODO //////////////// Update DB ////////////////////////////
-                group[groupName][id].sTitle = title;
+                //  Find title, update the title
+                group[groupName][id].sTitle = title;    //  Delete this after
             }
             else
                 return;
@@ -111,7 +115,8 @@ namespace SE2Final
             if (group[groupName].ContainsKey(id))
             {
                 //  TODO //////////////// Update DB ////////////////////////////
-                group[groupName].Remove(id);
+                //  Find document, delete it
+                group[groupName].Remove(id);    //   Delete this after
             }
             else
                 return;
@@ -140,6 +145,8 @@ namespace SE2Final
             d.iLock = 0;
             //  Add to local
             group[groupName].Add(d.iID, d);
+            //  Add to DB, send information back
+            //  Que for ID number
 
             //  TODO Update DB  //////////////////////////////////////////
             await Clients.All.SendAsync("LoadPage", d.iID, d.sTitle, d.sBody, d.iLock, groupName);
@@ -155,7 +162,8 @@ namespace SE2Final
             if(group.ContainsKey(groupName))
             {
                 //  TODO    Update DB   //////////////////////////////////////
-                group.Remove(groupName);
+                //  Delete qroup for DB
+                group.Remove(groupName);    //  Delete after
 
                 await Clients.All.SendAsync("removeGroup", groupName);
             }
@@ -170,7 +178,8 @@ namespace SE2Final
         public async Task BodyTyping(int id, string body, string groupName)
         {
             //  TODO Updated DB  /////////////////////////////
-            group[groupName][id].sBody = body;
+            //  Updated DB
+            group[groupName][id].sBody = body;  //  Delete after
 
             await Clients.Others.SendAsync("UpdateBody", "bdy" + id, body, groupName);
         }
@@ -183,7 +192,7 @@ namespace SE2Final
         public async Task CreateGroup(string groupName)
         {
             if(group.ContainsKey(groupName))
-            {   ///////////////////////////////////////Needs to be finded/////////////
+            {   ///////////////////////////////////////Needs to be found/////////////
                 //  Return to an error
                 string message = "A group with the name " + groupName + " already exists.";
                 await Clients.Caller.SendAsync("error", message);
