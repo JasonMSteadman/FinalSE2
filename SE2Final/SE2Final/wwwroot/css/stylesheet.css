@@ -1,0 +1,139 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    background-color: blanchedalmond;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: blanchedalmond;
+    font-size: 18px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+    will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+
+[class*="col-"] {
+    float: left;
+    padding: 0px;
+    background-color: white;
+}
+
+[class*="tabs*"] {
+    float: left;
+    width: 100%;
+}
+
+.col-1 {
+    width: 100%;
+}
+
+.col-2 {
+    width: 25%;
+}
+
+.col-3 {
+    width: 75%;
+}
+
+.col-4 {
+    width: 33.33%;
+}
+
+.col-5 {
+    width: 41.66%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.33%;
+}
+
+.col-8 {
+    width: 66.66%;
+}
+
+.col-9 {
+    width: 100%;
+}
+
+.col-10 {
+    width: 85%;
+}
+
+.col-11 {
+    width: 7.5%;
+}
+
+.col-12 {
+    width: 15%;
+}
+
+.col-13 {
+    width: 12.5%;
+}
+
+.customButton {
+    background: #55ACEE;
+    color: white;
+    font-weight: bold;
+    min-height: 35px;
+    border: none;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+div.side-menu {
+    width: 260px;
+    height: 800px;
+    background-color: white;
+    position: absolute;
+    left: -260px;
+    top: 50px;
+    opacity: 1;
+}
+
+div.minMax {
+    width: 30px;
+    height: 800px;
+    background: #06b655;
+    position: absolute;
+    left: 0px;
+    top: 50px;
+    opacity: 1;
+}
+
+div.page {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: 0;
+    left: 0px;
+    padding: 0;
+    padding-top: 100px;
+    background: white;
+}
+
+p {
+    color: #555;
+    font-size: 12px;
+    font-weight: normal;
+}
