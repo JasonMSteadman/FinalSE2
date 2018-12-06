@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="IIS Web Application Name" description="" value="SE2Final20181205073915" tags="IisApp">
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^D:\\CS\\SE2\\FinalBack\\FinalSE2\\SE2Final\\SE2Final\\obj\\Release\\netcoreapp2\.1\\PubTmp\\Out\\$" />
+  </parameter>
+</parameters>
